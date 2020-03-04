@@ -13,11 +13,6 @@ import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
-
-/**
- * @author <a href="mailto:xinput.xx@gmail.com">xinput</a>
- * @Date: 2019-09-12 13:56
- */
 @SpringBootApplication
 @MapperScan("com.idempotent.mapper")
 @EnableScheduling
@@ -28,8 +23,6 @@ public class IdempotentApp extends WebMvcConfigurationSupport {
 
     /**
      * 跨域
-     *
-     * @return
      */
     @Bean
     public CorsFilter corsFilter() {

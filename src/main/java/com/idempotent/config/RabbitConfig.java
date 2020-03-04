@@ -15,10 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author <a href="mailto:xinput.xx@gmail.com">xinput</a>
- * @Date: 2019-09-12 14:50
- */
 @Configuration
 public class RabbitConfig {
 

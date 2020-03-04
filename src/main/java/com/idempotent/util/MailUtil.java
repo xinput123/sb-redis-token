@@ -32,13 +32,14 @@ public class MailUtil {
 
     /**
      * 发送简单邮件
-     *
-     * @param mail
      */
     public boolean send(Mail mail) {
-        String to = mail.getTo();// 目标邮箱
-        String title = mail.getTitle();// 邮件标题
-        String content = mail.getContent();// 邮件正文
+        // 目标邮箱
+        String to = mail.getTo();
+        // 邮件标题
+        String title = mail.getTitle();
+        // 邮件正文
+        String content = mail.getContent();
 
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);
@@ -58,9 +59,6 @@ public class MailUtil {
 
     /**
      * 发送附件邮件
-     *
-     * @param mail 邮件
-     * @param file 附件
      */
     public boolean sendAttachment(Mail mail, File file) {
         String to = mail.getTo();
